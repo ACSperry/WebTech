@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration {
 			$table->text('question');
 			$table->text('answer');
 			$table->enum('gender', ['male', 'female']);
+			$table->rememberToken();
 			$table->timestamps();
 		});
 	}

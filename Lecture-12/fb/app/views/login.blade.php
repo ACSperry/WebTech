@@ -16,3 +16,23 @@
 		{{ Form:: submit('Login') }}
 	{{Form::close()}}
 @stop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

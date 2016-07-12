@@ -3,6 +3,7 @@
 Route::get('/login', 'AuthenticationController@showLoginView');
 Route::post('/login', 'AuthenticationController@loginUser');
 
+
 Route::get('/logout', 'AuthenticationController@logout');
 
 Route::get('/users', 'AuthenticationController@showUsers');
@@ -15,8 +16,8 @@ Route::post('/signup', 'RegistrationController@signUp');
 //Profile 
 Route::get('/profile/{uid}', 'HomeController@showUserProfile');
 
+//Feed
+Route::get('/feed', 'FeedController@showFeed');
 
-
-
-
-
+//Post
+Route::post('/post', 'PostController@createPost');
